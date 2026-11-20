@@ -319,8 +319,8 @@ namespace WindowsCenter
             FormBorderStyle = FormBorderStyle.None;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.Manual;
-            BackColor = Color.FromArgb(255, 0, 160, 255);
-            Opacity = 0.9;
+            BackColor = Color.FromArgb(255, 120, 150, 185); // muted slate blue
+            Opacity = 0.5;
             TopMost = true;
             var h = Handle; // create the window now so it can be positioned natively
         }
@@ -355,7 +355,7 @@ namespace WindowsCenter
     // monitor's center, and snaps the window onto that center when the drag ends.
     class SnapGuides : IDisposable
     {
-        const int SnapDistance = 16; // pixels at 100% scaling
+        const int SnapDistance = 15; // pixels at 100% scaling
 
         readonly Centerer centerer;
         readonly GuideLine vLine = new GuideLine(); // marks the horizontal center (vertical line)

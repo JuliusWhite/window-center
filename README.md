@@ -1,4 +1,4 @@
-# WindowsCenter
+﻿# WindowsCenter
 
 A small tray app that slides the active window to the center of the monitor it's on.
 
@@ -21,8 +21,8 @@ The app takes Alt+C even in programs that use it themselves, for example as a me
 ### Smart guides and snapping
 
 While you drag a window:
-- **Horizontal center:** a blue vertical line appears when the window's center comes within about 16 px of the monitor's horizontal center.
-- **Vertical center:** a blue horizontal line appears when the window comes that close to the monitor's vertical center.
+- **Horizontal center:** a faint vertical line appears when the window's center comes within about 5 px of the monitor's horizontal center.
+- **Vertical center:** a faint horizontal line appears when the window comes that close to the monitor's vertical center.
 - **Snapping:** if you let go while a line is showing, the window slides exactly onto that center line. If both lines are showing, it snaps to the full center.
 
 Guides never appear while you resize a window or when the window is maximized. The window snaps when you let go of the mouse, not during the drag. Windows sets a dragged window's position from the cursor, so another app can't hold it in place mid-drag without making it flicker.
